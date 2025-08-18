@@ -41,6 +41,36 @@
     color: #000;
     display: block;
   }
+  .hero-section{
+    position: relative;
+  }
+  
+  .hero-section img{
+    width: 100%;
+    height: auto;
+  }
+  .hero-text{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    .hero-text{
+      top: 50%;
+      left: 5%;
+      bottom: auto;
+      transform: translateY(-30%);
+      text-align: left;
+    }
+    .hero-section{
+      height: 500px;
+      object-fit: cover;
+    }
+  }
 
 
 
