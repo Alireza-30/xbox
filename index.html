@@ -9,95 +9,180 @@
     <title>Xbox</title>
 </head>
 <body>
-    <nav class="navbar bg-white">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-          
-          <!-- سمت چپ (آیکون‌ها) -->
-          <div class="d-flex align-items-center">
-            <i class="bi bi-list fs-3 me-4"></i>  <!-- آیکون همبرگری -->
-            <i class="bi bi-search fs-4"></i>     <!-- آیکون ذره‌بین -->
-          </div>
-          
-          <!-- وسط (لوگو) -->
-          <a class="navbar-brand mx-auto" href="#">
-            <img src="images/Microsoft-Logo-Transparent.png" alt="لوگو">
-          </a>
-          
-          <div class="d-flex align-items-center">
-            <i class="bi bi-cart fs-4 me-5"></i>
-            <div class="profile-icon">
-              <i class="bi bi-person"></i>
-            </div>
-          </div>
+  <nav class="navbar bg-white">
+    <div class="container-fluid">
+  
+      <!-- :iphone: حالت موبایل (sm تا md-) -->
+      <div class="d-flex w-100 align-items-center justify-content-between d-md-none">
+        <div class="d-flex align-items-center">
+          <i class="bi bi-list fs-3 me-4"></i>
+          <i class="bi bi-search fs-4"></i>
         </div>
-      </nav>
-
-      <!-- زیر Navbar: لوگوی ایکس‌باکس سمت چپ با منو -->
-<div class="sub-logo d-flex align-items-center position-relative">
-    <!-- دکمه لوگو که منو باز می‌کنه -->
-    <a href="#" class="dropdown-toggle" id="xboxDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="images/Xbox-Logo.wine.svg" alt="لوگوی ایکس‌باکس" style="height:60px;">
-    </a>
   
-    <!-- منو -->
-    <ul class="dropdown-menu" aria-labelledby="xboxDropdown">
-      <li><a class="dropdown-item" href="#">Home </a></li>
-      <li><a class="dropdown-item" href="#">Game Pass </a></li>
-      <li><a class="dropdown-item" href="#">Games </a></li>
-      <li><a class="dropdown-item" href="#">Devices</a></li>
-      <li><a class="dropdown-item" href="#">Play</a></li>
-      <li><a class="dropdown-item" href="#">Store</a></li>
-      <li><a class="dropdown-item" href="#">Community</a></li>
-      <li><a class="dropdown-item" href="#">Support</a></li>
-      <li><a class="dropdown-item" href="#">My Xbox</a></li>
-      <li><a class="dropdown-item" href="#">Developers</a></li>
-    </ul>
-  </div>
-
-  <div class="hero-section position-relative">
-    <img src="images/457771195-290.webp" class="img-fluid w-100 d-block" alt="Xbox Banner">
+        <a class="navbar-brand mx-auto" href="#">
+          <img src="images/Microsoft-Logo-Transparent.png" alt="لوگو" style="height:40px;">
+        </a>
   
-    <div class="hero-text text-center text-md-start">
-      <span class="badge bg-warning text-dark">NOW AVAILABLE</span>
-      <h2 class="fw-bold">EA SPORTS Madden NFL <br>26</h2>
-      <p class="lead">Experince explosive gameplay,backed by years <br>of real NFL data</p>
-      <a href="#" class="btn btn-success btn-sm">GET IT NOW</a>
+        <div class="d-flex align-items-center">
+          <i class="bi bi-cart fs-4 me-4"></i>
+          <i class="bi bi-person fs-4"></i>
+        </div>
+      </div>
+  
+      <!-- :computer: حالت md (سه منو) -->
+      <div class="d-none d-md-flex d-lg-none w-100 align-items-center justify-content-between">
+        <!-- سمت چپ: لوگو + خط + ایکس‌باکس -->
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand me-3" href="#">
+            <img src="images/Microsoft-Logo-Transparent.png" alt="لوگو" style="height:40px;">
+          </a>
+          <div class="vr mx-3"></div>
+          <a href="#">
+            <img src="images/Xbox-Logo.wine.svg" alt="لوگوی ایکس‌باکس" style="height:40px;">
+          </a>
+  
+          <!-- منوی ۳تایی -->
+          <ul class="nav ms-4">
+            <li class="nav-item me-4"><a class="nav-link" href="#">Games</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#">Devices</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Play</a></li>
+          </ul>
+        </div>
+  
+        <!-- سمت راست: فقط آیکون‌ها -->
+        <div class="d-flex align-items-center">
+          <i class="bi bi-search fs-5 me-4"></i>
+          <i class="bi bi-cart fs-5 me-4"></i>
+          <i class="bi bi-person fs-5"></i>
+        </div>
+      </div>
+  
+      <!-- 🖥 حالت lg و xl (۹ منو + dropdown + متن کنار آیکون‌ها) -->
+      <div class="d-none d-lg-flex w-100 align-items-center justify-content-between">
+        <!-- سمت چپ: لوگو + خط + ایکس‌باکس -->
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand me-3" href="#">
+            <img src="images/Microsoft-Logo-Transparent.png" alt="لوگو" style="height:40px;">
+          </a>
+          <div class="vr mx-3"></div>
+          <a href="#">
+            <img src="images/Xbox-Logo.wine.svg" alt="لوگوی ایکس‌باکس" style="height:40px;">
+          </a>
+  
+          <!-- منوی ۹تایی -->
+          <ul class="nav ms-4">
+            <li class="nav-item me-4"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#">Game Pass</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#">Games</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#">Devices</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#">Play</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#">Store</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#">Community</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#">Support</a></li>
+            <li class="nav-item me-4"><a class="nav-link" href="#">My Xbox</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Developers</a></li>
+          </ul>
+        </div>
+  
+        <!-- سمت راست: dropdown + آیکون‌ها با متن -->
+        <div class="d-flex align-items-center">
+          <!-- Dropdown کنار سرچ -->
+          <div class="dropdown me-4">
+            <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
+               id="searchDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-search fs-5 me-1"></i> Search
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="searchDropdown">
+              <li><a class="dropdown-item" href="#">Search Games</a></li>
+              <li><a class="dropdown-item" href="#">Search Devices</a></li>
+            </ul>
+          </div>
+  
+          <a href="#" class="d-flex align-items-center text-dark text-decoration-none me-4">
+            <i class="bi bi-cart fs-5 me-1"></i> Cart
+          </a>
+  
+          <a href="#" class="d-flex align-items-center text-dark
+  text-decoration-none">
+            <i class="bi bi-person fs-5 me-1"></i> Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- زیر Navbar: ایکس‌باکس + منو فقط در موبایل -->
+  <div class="sub-logo d-flex align-items-center position-relative d-md-none ps-3 mt-2">
+    <div class="xbox-menu position-relative">
+      <a href="#">
+        <img src="images/Xbox-Logo.wine.svg" alt="لوگوی ایکس‌باکس" style="height:50px;">
+      </a>
+      <ul class="xbox-dropdown">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Game Pass</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Devices</a></li>
+        <li><a href="#">Play</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">My Xbox</a></li>
+        <li><a href="#">Developers</a></li>
+      </ul>
     </div>
   </div>
-  
 
- 
-  <!-- زیر تصویر: دو ردیف سه تایی آیکون با متن سبز -->
-<div class="container my-5 ">
-  <!-- ردیف اول -->
-  <div class="row text-center ">
-    <div class="col-4 col-md-2 ">
+<!-- Hero Section -->
+<div class="hero-section position-relative">
+  <img src="images/457771195-290.webp" class="img-fluid w-100 d-block" alt="Xbox Banner">
+
+  <div class="hero-text position-absolute top-50 start-50 translate-middle  text-lg-start">
+    <span class="badge bg-warning text-dark">NOW AVAILABLE</span>
+    <h2 class="fw-bold">EA SPORTS Madden NFL <br>26</h2>
+    <p class="lead">Experience explosive gameplay, backed by years <br>of real NFL data</p>
+    <a href="#" class="btn btn-success btn-sm">GET IT NOW</a>
+  </div>
+</div>
+
+<!-- Icons Section -->
+<div class="container my-5 icons-section">
+  <div class="row text-center justify-content-center">
+    <div class="col-4 col-md-4 col-lg-2 mb-3">
       <i class="bi bi-journal-text text-success fs-1 d-block mx-auto"></i>
-      <p class=" mt-2 text-success">Game Pass </p>
+      <p class="mt-2 text-success">Game Pass</p>
     </div>
-    <div class="col-4 col-md-2 mb-3">
+    <div class="col-4 col-md-4 col-lg-2 mb-3">
       <i class="bi bi-controller text-success fs-1 d-block mx-auto"></i>
-      <p class=" mt-2 text-success">Games </p>
+      <p class="mt-2 text-success">Games</p>
     </div>
-    <div class="col-4 col-md-2 mb-3">
+    <div class="col-4 col-md-4 col-lg-2 mb-3">
       <i class="bi bi-pc-display text-success fs-1 d-block mx-auto"></i>
-      <p class=" mt-2 text-success">Devices</p>
+      <p class="mt-2 text-success">Devices</p>
     </div>
-  
-    <div class="col-4 col-md-2 mb-3">
+    <div class="col-4 col-md-4 col-lg-2 mb-3">
       <i class="bi bi-headphones text-success fs-1 d-block mx-auto"></i>
-      <p class=" mt-2 text-success">Accessories</p>
+      <p class="mt-2 text-success">Accessories</p>
     </div>
-    <div class="col-4 col-md-2 mb-3">
+    <div class="col-4 col-md-4 col-lg-2 mb-3">
       <i class="bi bi-play text-success fs-1 d-block mx-auto"></i>
-      <p class=" mt-2 text-success">Play</p>
+      <p class="mt-2 text-success">Play</p>
     </div>
-    <div class="col-4 col-md-2 mb-3">
+    <div class="col-4 col-md-4 col-lg-2 mb-3">
       <i class="bi bi-person-circle text-success fs-1 d-block mx-auto"></i>
-      <p class=" mt-2 text-success">Sign In</p>
+      <p class="mt-2 text-success">Sign In</p>
     </div>
   </div>
 </div>
+
+
+
+  
+  
+  
+  
+  
+ 
+  
 
 <!-- سکشن زیر آیکون‌ها -->
 <div class="container-fluid p-0 mt-3 d-block d-md-none">
